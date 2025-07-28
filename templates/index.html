@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evergreen - Crop Disease Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>🌿 Evergreen</h1>
+    <p>AI-powered Crop Disease Detection for Sustainable Farming</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Upload Leaf Image</h2>
+      <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required />
+        <br />
+        <button type="submit">🔍 Predict Disease</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Evergreen Initiative | Designed by PRIYA</p>
+  </footer>
+</body>
+</html>
